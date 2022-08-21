@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.header-right-container h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  height: 5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-container {
+  display: flex;
+  justify-content: center;
+  /* width: 800px; */
+  width: 100%;
+  height: 400px;
+  /* margin-left: 2rem; */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-left-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 50%;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.header-right-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10rem;
+  /* margin-left: 2rem; */
+  width: 50%;
+  padding: 1rem;
 }
-
-.App-link {
-  color: #61dafb;
+.inner-container {
+  background: rgb(251, 188, 188);
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inner-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 1rem;
+}
+.inner-right-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 2rem;
+}
+.order-button {
+  margin: 3rem;
+  border-radius: 25px;
+}
+.btn {
+  background-color: black;
+  border-color: black;
+}
+.btn-secondary {
+  background-color: black;
+  border-color: black;
+}
+.carousel-item {
+  height: 500px;
+}
+.card-test {
+  display: flex;
+  flex-direction: row;
 }
