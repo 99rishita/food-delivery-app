@@ -1,74 +1,178 @@
 import React from "react";
-import { CDBFooter, CDBFooterLink, CDBBox, CDBBtn, CDBIcon } from "cdbreact";
+import "../Footer.css";
 
 const Footer = () => {
   return (
-    <CDBFooter className="shadow">
-      <CDBBox
-        display="flex"
-        flex="column"
-        className="mx-auto py-5"
-        style={{ width: "90%" }}
-      >
-        <CDBBox display="flex" justifyContent="between" className="flex-wrap">
-          <CDBBox>
-            <a href="/" className="d-flex align-items-center p-0 text-dark">
-              <img alt="logo" src="logo" width="30px" />
-              <span className="ml-3 h5 font-weight-bold">Devwares</span>
-            </a>
-            <p className="my-3" style={{ width: "250px" }}>
-              We are creating High Quality Resources and tools to Aid developers
-              during the developement of their projects
-            </p>
-            <CDBBox display="flex" className="mt-4">
-              <CDBBtn flat color="dark">
-                <CDBIcon fab icon="facebook-f" />
-              </CDBBtn>
-              <CDBBtn flat color="dark" className="mx-3">
-                <CDBIcon fab icon="twitter" />
-              </CDBBtn>
-              <CDBBtn flat color="dark" className="p-2">
-                <CDBIcon fab icon="instagram" />
-              </CDBBtn>
-            </CDBBox>
-          </CDBBox>
-          <CDBBox>
-            <p className="h5 mb-4" style={{ fontWeight: "600" }}>
-              Devwares
-            </p>
-            <CDBBox flex="column" style={{ cursor: "pointer", padding: "0" }}>
-              <CDBFooterLink href="/">Resources</CDBFooterLink>
-              <CDBFooterLink href="/">About Us</CDBFooterLink>
-              <CDBFooterLink href="/">Contact</CDBFooterLink>
-              <CDBFooterLink href="/">Blog</CDBFooterLink>
-            </CDBBox>
-          </CDBBox>
-          <CDBBox>
-            <p className="h5 mb-4" style={{ fontWeight: "600" }}>
-              Help
-            </p>
-            <CDBBox flex="column" style={{ cursor: "pointer", padding: "0" }}>
-              <CDBFooterLink href="/">Support</CDBFooterLink>
-              <CDBFooterLink href="/">Sign Up</CDBFooterLink>
-              <CDBFooterLink href="/">Sign In</CDBFooterLink>
-            </CDBBox>
-          </CDBBox>
-          <CDBBox>
-            <p className="h5 mb-4" style={{ fontWeight: "600" }}>
-              Products
-            </p>
-            <CDBBox flex="column" style={{ cursor: "pointer", padding: "0" }}>
-              <CDBFooterLink href="/">Windframe</CDBFooterLink>
-              <CDBFooterLink href="/">Loop</CDBFooterLink>
-              <CDBFooterLink href="/">Contrast</CDBFooterLink>
-            </CDBBox>
-          </CDBBox>
-        </CDBBox>
-        <small className="text-center mt-5">
-          &copy; Devwares, 2020. All rights reserved.
-        </small>
-      </CDBBox>
-    </CDBFooter>
+    <footer className="footer">
+      {/* <div className="footer-top section">
+        <div className="container">
+          <div className="footer-brand">
+            <ul className="social-list">
+              <li>
+                <a href="#" className="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="footer-link-box">
+            <ul className="footer-list">
+              <li>
+                <p className="footer-list-title">Contact Us</p>
+              </li>
+
+              <li>
+                <address className="footer-link">
+                  <ion-icon name="location"></ion-icon>
+
+                  <span className="footer-link-text">
+                    Global Technology Park, PO 560103, Bangalore India
+                  </span>
+                </address>
+              </li>
+
+              <li>
+                <a href="tel:+557343673257" className="footer-link">
+                  <ion-icon name="call"></ion-icon>
+
+                  <span className="footer-link-text">+91-7353091577</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:reyani@blog.com" className="footer-link">
+                  <ion-icon name="mail"></ion-icon>
+
+                  <span className="footer-link-text">reyani@blog.com</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul className="footer-list">
+              <li>
+                <p className="footer-list-title">About Reyani</p>
+              </li>
+
+              <li>
+                <a href="#" className="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span className="footer-link-text">Order Delivery</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span className="footer-link-text">Support Center</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span className="footer-link-text">Customer Support</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span className="footer-link-text">Social Impact</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span className="footer-link-text">New Arrivals</span>
+                </a>
+              </li>
+            </ul>
+
+            <div className="footer-list">
+              <p className="footer-list-title">Products</p>
+
+              <table className="footer-table">
+                <tbody>
+                  <tr className="table-row">
+                    <th className="table-head" scope="row">
+                      Tote Bag
+                    </th>
+
+                    <td className="table-data">Mini Bag</td>
+                  </tr>
+
+                  <tr className="table-row">
+                    <th className="table-head" scope="row">
+                      Satchel Bag
+                    </th>
+
+                    <td className="table-data">Frame Bag</td>
+                  </tr>
+
+                  <tr className="table-row">
+                    <th className="table-head" scope="row">
+                      Shoulder Bag
+                    </th>
+
+                    <td className="table-data">Quilted Bag</td>
+                  </tr>
+
+                  <tr className="table-row">
+                    <th className="table-head" scope="row">
+                      Frame Bag
+                    </th>
+
+                    <td className="table-data">Sling Bag</td>
+                  </tr>
+
+                  <tr className="table-row">
+                    <th className="table-head" scope="row">
+                      Boho Bag
+                    </th>
+
+                    <td className="table-data">Clutch</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="footer-bottom">
+        <div className="container">
+          <p className="copyright">
+            Made with &#x2764; and passion FoodApp &copy; 2022 All Rights
+            Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 };
 

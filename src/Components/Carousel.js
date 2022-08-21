@@ -19,7 +19,7 @@ function FoodCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="breakfast.jpg"
+          src="combo.jpg"
           alt="Second slide"
           height={500}
           width={500}

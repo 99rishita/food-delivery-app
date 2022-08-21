@@ -8,6 +8,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import FoodCarousel from "./Components/Carousel";
 import FoodCard from "./Components/Cards";
+import AfterHeader from "./Components/AfterHeader";
 
 function App() {
   //const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -16,8 +17,10 @@ function App() {
       <FoodNavbar />
       <FoodCarousel />
       <Header />
+      <br />
+      <AfterHeader />
       <FoodCard />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

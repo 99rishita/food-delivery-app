@@ -16,8 +16,8 @@ const Header = () => {
         </div>
         <div className="inner-container">
           <div className="inner-left-container">
-            <h2>1.2M+</h2>
-            <h3>Happy Customers</h3>
+            <h2 style={{ fontSize: "28px", fontWeight: "600" }}>1.2M+</h2>
+            <h4>Happy Customers</h4>
           </div>
           <div className="inner-right-container">
             <img
