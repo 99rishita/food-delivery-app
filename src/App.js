@@ -9,6 +9,8 @@ import Footer from "./Components/Footer";
 import FoodCarousel from "./Components/Carousel";
 import FoodCard from "./Components/Cards";
 import AfterHeader from "./Components/AfterHeader";
+import FoodBar from "./Components/FoodBar";
+import Serve from "./Components/Serve";
 
 function App() {
   //const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -18,7 +20,12 @@ function App() {
       <FoodCarousel />
       <Header />
       <br />
-      <AfterHeader />
+      <br />
+      {/* <AfterHeader /> */}
+      <Serve />
+      <br />
+      <br />
+      <FoodBar />
       <FoodCard />
       <Footer />
     </>

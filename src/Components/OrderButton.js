@@ -9,8 +9,13 @@ function OrderButton() {
       {/* <Button variant="secondary" size="lg" active>
         Order Now
       </Button> */}
-      <Button variant="dark">Order Now</Button>&nbsp;
-      <Button variant="info">What to Order</Button>{" "}
+      <Button variant="dark" style={{ width: "25%", margin: "0 15px 0 0" }}>
+        Order Now
+      </Button>
+      &nbsp;
+      <Button variant="info" style={{ width: "25%", margin: 0 }}>
+        What to Order
+      </Button>{" "}
     </>
   );
 }

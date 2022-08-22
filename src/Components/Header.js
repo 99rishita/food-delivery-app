@@ -9,7 +9,10 @@ const Header = () => {
         <img src="header-food.jpg" width={500} height={500} />
       </div>
       <div className="header-right-container">
-        <h1>Feel the taste of Indian Foods</h1>
+        <h1>
+          <span>Hungry?</span>&nbsp;Get the food delivered at your{" "}
+          <span>door !</span>
+        </h1>
         <p>Order the most popular Indian food from anywhere and anytime</p>
         <div className="order-button">
           <OrderButton />
@@ -22,11 +25,12 @@ const Header = () => {
           <div className="inner-right-container">
             <img
               src="social-user.png"
-              height={40}
-              width={40}
+              style={{ borderRadius: "50rem", height: 50, width: 50 }}
               className="rounded"
             />
-            This is the best food delivery service that exists!
+            <div style={{ marginLeft: "12px", lineHeight: "18px" }}>
+              This is the best food delivery service that exists!
+            </div>
           </div>
         </div>
       </div>

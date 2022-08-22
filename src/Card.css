@@ -1,0 +1,20 @@
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 45%;
+  margin-left: auto;
+  background-color: #fc8019;
+  border-color: #fc8019;
+  border-radius: 10rem;
+  color: black;
+}
+
+.btn:hover {
+  width: 45%;
+  margin-left: auto;
+  background-color: #eb6825;
+  border-color: #eb6825;
+}
