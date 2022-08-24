@@ -11,23 +11,49 @@ import FoodCard from "./Components/Cards";
 import AfterHeader from "./Components/AfterHeader";
 import FoodBar from "./Components/FoodBar";
 import Serve from "./Components/Serve";
+import Food from "./Components/Food";
+import Image from "./Components/Image";
+import Home from "./Pages/Home";
+import Foods from "./Pages/Foods";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  BrowserRouter,
+  Link,
+  useRouteMatch,
+  useParams,
+} from "react-router-dom";
+import Foodcanvas from "./Components/Foodcanvas";
 
 function App() {
   //const root = ReactDOM.createRoot(document.getElementById("root"));
   return (
+    // <>
+    //   <FoodNavbar />
+    //   <FoodCarousel />
+    //   <Header />
+    //   <br />
+    //   <br />
+    //   {/* <AfterHeader /> */}
+    //   <Serve />
+    //   <br />
+    //   <br />
+    //   <FoodBar />
+    //   <FoodCard />
+    //   <Footer />
+    //   <br />
+    //   <Image />
+    //   <Food />
+    // </>
     <>
-      <FoodNavbar />
-      <FoodCarousel />
-      <Header />
-      <br />
-      <br />
-      {/* <AfterHeader /> */}
-      <Serve />
-      <br />
-      <br />
-      <FoodBar />
-      <FoodCard />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/food-items" element={<Foods />}></Route>
+          {/* <Route path="/food-canvas" element={<Foodcanvas />}></Route> */}
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -1,5 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Food from "./Food";
+import Foodcanvas from "./Foodcanvas";
 
 function FoodNavbar() {
   return (
@@ -24,6 +27,18 @@ function FoodNavbar() {
             />
             Food App{" "}
           </Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/" style={{ color: "white" }}>
+              Home
+            </Nav.Link>
+            <Nav.Link href="/food-items" style={{ color: "white" }}>
+              Foods
+            </Nav.Link>
+            <Nav.Link href="#pricing" style={{ color: "white" }}>
+              Contact
+            </Nav.Link>
+          </Nav>
+          <img src="orange_cart.webp" height="30" width="30" />
         </Container>
       </Navbar>
     </>
